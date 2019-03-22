@@ -11,6 +11,30 @@ class RolesTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('roles')->insert([
+
+                array(
+                    'id' => 1,
+                    'name' => 'Admin',
+                    'updated_at'=>now(),
+                    'created_at'=>now(),
+                ),
+                array(
+                    'id' => 2,
+                    'name' => 'Staff',
+                    'updated_at'=>now(),
+                    'created_at'=>now(),
+                ),
+                array(
+                    'id' => 3,
+                    'name' => 'User',
+                    'updated_at'=>now(),
+                    'created_at'=>now(),
+                )
+
+        ]);
+
     }
 }
+
+

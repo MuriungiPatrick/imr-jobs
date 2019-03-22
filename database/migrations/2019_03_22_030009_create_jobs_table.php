@@ -28,6 +28,7 @@ class CreateJobsTable extends Migration
             $table->unsignedBigInteger('category_id')->index()->nullable();
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('restrict');
 
+            $table->timestamp('published_at');
             $table->softDeletes();
             $table->timestamps();
         });

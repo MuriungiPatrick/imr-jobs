@@ -18,8 +18,8 @@ use Faker\Generator as Faker;
 $factory->define(User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'aboutme'=>$faker->paragraghs(rand(2,3),true),
-        'avatar'=>$faker->imageUrl('public/assets/img',100,100),
+        'aboutme'=>$faker->paragraphs(rand(2,3),true),
+        'avatar'=>$faker->image('public/assets/img/avatar',100,100),
         'slug'=>$faker->unique()->slug,
         'email' => $faker->unique()->safeEmail,
         'email_verified_at' => now(),
