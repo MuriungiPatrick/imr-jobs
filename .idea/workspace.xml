@@ -21,17 +21,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="21" column="68" lean-forward="true" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -201,32 +191,6 @@
               <item name="database" type="462c0819:PsiDirectoryNode" />
               <item name="factories" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="avatar" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -274,12 +238,12 @@
       <workItem from="1553213683632" duration="7208000" />
       <workItem from="1553222176912" duration="4781000" />
       <workItem from="1553227583609" duration="9315000" />
-      <workItem from="1553269584804" duration="4987000" />
+      <workItem from="1553269584804" duration="5529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26291000" />
+    <option name="totallyTimeSpent" value="26833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="0" width="1812" height="1047" extended-state="0" />
@@ -300,7 +264,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Atlassian " order="10" />
       <window_info anchor="bottom" id="RNConsole" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.47030303" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.47030303" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.5224242" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
