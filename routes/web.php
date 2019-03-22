@@ -11,6 +11,32 @@
 |
 */
 
+// DEFINE HOMEPAGE
 Route::get('/', function () {
-    return view('welcome');
+    return view('jobs.index');
 });
+
+
+// DEFINE SHOW Page
+Route::get('/jobs/show', function () {
+    return view('jobs.SHOW');
+});
+
+// DEFINE CATEGORY Page
+Route::get('/category/index', function () {
+    return view('category.index');
+});
+
+// DEFINE Author Page
+Route::get('/author/index', function () {
+    return view('author.index');
+});
+
+// DEFINE About Page
+Route::get('/about/index', function () {
+    return view('about.index');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
