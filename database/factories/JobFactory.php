@@ -12,7 +12,7 @@ $factory->define(App\Job::class, function (Faker $faker) {
         'job_types'=>$faker->word(rand(5,7)),
         'job_description'=>$faker->paragraphs(rand(5,7),true),
         'hourly_rate'=>$faker->numberBetween(550,1270),
-        'slug'=>$faker->slug,
+        'slug'=>$faker->unique()->slug,
         'category_id'=>rand(1,6),
         'published_at'=>now(),
         'updated_at'=>now(),
