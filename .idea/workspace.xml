@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06b74753-eb7e-43f5-9c03-1cccf5acc333" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_22_030009_create_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_22_030009_create_jobs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_03_22_030157_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_03_22_030157_create_categories_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,29 +15,9 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_22_030009_create_jobs_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="47" />
-              <folding>
-                <element signature="e#7#45#0#PHP" expanded="true" />
-                <element signature="e#181#246#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_22_030157_create_categories_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-              <folding>
-                <element signature="e#7#45#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -197,48 +173,13 @@
             <path>
               <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
               <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
               <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="about" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="imr-jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="imr-jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -287,17 +228,18 @@
       <updated>1553213681546</updated>
       <workItem from="1553213683632" duration="7208000" />
       <workItem from="1553222176912" duration="4781000" />
-      <workItem from="1553227583609" duration="4692000" />
+      <workItem from="1553227583609" duration="5741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16681000" />
+    <option name="totallyTimeSpent" value="17730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="92" y="0" width="1812" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13504075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20023283" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -313,7 +255,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Atlassian " order="10" />
       <window_info anchor="bottom" id="RNConsole" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.53939396" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.39636365" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.52363634" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -485,6 +427,16 @@
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_22_030157_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_22_030009_create_jobs_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -496,15 +448,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_22_030157_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
