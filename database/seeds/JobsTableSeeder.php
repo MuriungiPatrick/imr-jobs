@@ -11,6 +11,6 @@ class JobsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        facrory('App\job',20)->create();
     }
 }
