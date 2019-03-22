@@ -15,6 +15,17 @@ class CreateJobsTable extends Migration
     {
         Schema::create('jobs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('job_title');
+            $table->string('slug')->unique();
+            $table->string('job_type');
+            $table->longText('job_description')->nullable();
+            $table->text('hourly_rate')->nullable();
+            $table->integer('author_id')->unsigned();
+            $table->foreign('author_id')->references('id')->on('users')->onDelete('restrict');
+            $table->integer('category_id')->unsigned();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('restrict');
+            $table->timestamp('published_at')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
