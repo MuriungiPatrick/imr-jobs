@@ -1,0 +1,7 @@
+
+
+ @foreach($categories as $category)
+       <a href="{{ route('category', $category->slug )}}">
+          <h4>{{ $category->title }}</h4>
+       </a>
+ @endforeach

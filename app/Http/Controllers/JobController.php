@@ -20,7 +20,6 @@ class JobController extends Controller
         return view('jobs.index', compact('jobs'));
     }
 
-
     /**
      * define the Show Page.
      *   AND
@@ -30,7 +29,6 @@ class JobController extends Controller
     {
         return view('jobs.show');
     }
-
 
     /**
      * define the Category.
@@ -48,7 +46,6 @@ class JobController extends Controller
             ->paginate(5);
         return view('category.index', compact('jobs', 'categories', 'categoryName'));
     }
-
 
     /**
      * define the Author.
