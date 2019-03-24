@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Job;
+use App\Category;
+use App\User;
 use Illuminate\Http\Request;
 
 class JobController extends Controller
@@ -35,14 +37,21 @@ class JobController extends Controller
      *   AND
      * returns the view for this area
      */
-    public function category()
+    public function category(category $category)
     {
-        return view('category.index');
+        $categoryName = $category->title;
+        $categories = category::with('jobs')->orderby('title','asc')->get();
+        $jobs = job::with('category')
+            ->LatestFirst()
+            ->published()
+            ->where('category_id', $category->id)
+            ->paginate(5);
+        return view('category.index', compact('jobs', 'categories', 'categoryName'));
     }
 
 
     /**
-     * define the Category.
+     * define the Author.
      *   AND
      * returns the view for this area
      */

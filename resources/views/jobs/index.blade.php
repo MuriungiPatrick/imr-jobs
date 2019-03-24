@@ -62,7 +62,7 @@
                                 <a href="author-jobs-details.html">James Mwirigi</a></div>
 
                             <div class="action-btn">
-                                <a class="btn btn-xs btn-info" href="category-details.html">Backend</a>
+                                <a class="btn btn-xs btn-info" href="{{ url('category', $job->category->slug) }}">{{ $job->category->title }}</a>
                             </div>
                         </footer>
                     </div>
