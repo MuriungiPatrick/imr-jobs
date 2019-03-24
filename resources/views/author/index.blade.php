@@ -17,87 +17,41 @@
             <div class="container">
                 <div class="row jobs-details">
                     <!-- Job item -->
-                    <div class="col-xs-12">
-                        <div class="jobs-block">
-                            <header>
-                                <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
-                                <div class="hgroup">
-                                    <h4>
-                                        <a href="jobs-details.html">Qui harum culpa accusantium quisquam quis quo.</a>
-                                    </h4>
-                                    <div class="spacer-front"></div>
-                                </div>
-                                <div class="jobs-meta">
-                                    <span class="label label-success">Full Time</span>
-                                    <span class="label label-warning"><i class="fa fa-dollar"></i> 924</span>
-                                </div>
-                            </header>
+                @foreach($jobs as $job)
 
-                            <footer>
-                                <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>2 weeks ago &nbsp; By:&nbsp;<a href="author-jobs-details.html">James Mwirigi</a></div>
+                    <!-- START JOB DETAILS -->
+                        <div class="col-xs-12">
+                            <div class="jobs-block">
+                                <header>
+                                    <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
+                                    <div class="hgroup">
+                                        <h4>
+                                            <a href="jobs-details.html">{{ $job->job_title }}</a>
+                                        </h4>
+                                        <div class="spacer-front"></div>
+                                    </div>
+                                    <div class="jobs-meta">
+                                        <span class="label label-success">{{ $job->job_type }}</span>
+                                        <span class="label label-warning"><i class="fa fa-dollar"></i>{{ $job->hourly_rate }}</span>
+                                    </div>
+                                </header>
 
-                                <div class="action-btn">
-                                    <a class="btn btn-xs btn-info" href="category-details.html">Backend</a>
-                                </div>
-                            </footer>
+                                <footer>
+                                    <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i>
+                                        </strong>{{ $job->created_at->diffForHumans() }} &nbsp; By:&nbsp;
+                                        <a href="{{ url('author', $job->author->slug)}}">{{ $job->author->name }}</a></div>
+
+                                    <div class="action-btn">
+                                        <a class="btn btn-xs btn-info" href="{{ url('category', $job->category->slug) }}">{{ $job->category->title }}</a>
+                                    </div>
+                                </footer>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="jobs-block">
-                            <header>
-                                <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
-                                <div class="hgroup">
-                                    <h4>
-                                        <a href="jobs-details.html">Qui harum culpa accusantium quisquam quis quo.</a>
-                                    </h4>
-                                    <div class="spacer-front"></div>
-                                </div>
-                                <div class="jobs-meta">
-                                    <span class="label label-success">Full Time</span>
-                                    <span class="label label-warning"><i class="fa fa-dollar"></i> 924</span>
-                                </div>
-                            </header>
+                        <!-- END JOB DETAILS -->
 
-                            <footer>
-                                <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>2 weeks ago &nbsp; By:&nbsp;<a href="author-jobs-details.html">James Mwirigi</a></div>
+                @endforeach
 
-                                <div class="action-btn">
-                                    <a class="btn btn-xs btn-info" href="category-details.html">Backend</a>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-xs-12">
-                        <div class="jobs-block">
-                            <header>
-                                <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
-                                <div class="hgroup">
-                                    <h4>
-                                        <a href="jobs-details.html">Qui harum culpa accusantium quisquam quis quo.</a>
-                                    </h4>
-                                    <div class="spacer-front"></div>
-                                </div>
-                                <div class="jobs-meta">
-                                    <span class="label label-success">Full Time</span>
-                                    <span class="label label-warning"><i class="fa fa-dollar"></i> 924</span>
-                                </div>
-                            </header>
-
-                            <footer>
-                                <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>2 weeks ago &nbsp; By:&nbsp;<a href="author-jobs-details.html">James Mwirigi</a></div>
-
-                                <div class="action-btn">
-                                    <a class="btn btn-xs btn-info" href="category-details.html">Backend</a>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                    <!-- END Job item -->
-
-
+                <!-- END Job item -->
 
                 </div>
 

@@ -11,17 +11,17 @@
             <div class="left-side">
                 <div class="header-image"><a href="single-company-profile.html"><img src="{{asset('assets/img/Team-5-specs.png')}}" alt=""></a></div>
                 <div class="header-details">
-                    <h2>Qui harum culpa accusantium quisquam quis quo.</h2>
+                    <h2>{{ $job->job->title }}</h2>
                     <ul>
-                        <li>Posted By: &nbsp;<a class="text-white" href="author-jobs-details.html">
-                                <i class="fa fa-user"></i> Patrick Muriungi</a></li>
+                        <li>Posted By: &nbsp;<a class="text-white" href="{{ url('author->slug') }}">
+                                <i class="fa fa-user"></i>{{ $job->author->name }}</a></li>
                     </ul>
                 </div>
             </div>
             <div class="right-side">
                 <div class="salary-box">
                     <div class="salary-type">Hourly Rate</div>
-                    <div class="salary-amount">$&nbsp;924</div>
+                    <div class="salary-amount">$&nbsp;{{ $job->hourly_rate }}</div>
                 </div>
             </div>
         </div>
@@ -100,17 +100,17 @@
 
                                         <li><i class="fa fa-briefcase"></i>
                                             <span>Job Type</span>
-                                            <h5>Full Time</h5>
+                                            <h5>{{ $job->job_type }}</h5>
                                         </li>
                                         <li>
                                             <i class="fa fa-dollar"></i>
                                             <span>Hourly Rate</span>
-                                            <h5>$ &nbsp;924</h5>
+                                            <h5>$ &nbsp;{{ $job->hourly_rate }}</h5>
                                         </li>
                                         <li>
                                             <i class="fa fa-clock-o"></i>
                                             <span>Date Posted</span>
-                                            <h5>1 week ago</h5>
+                                            <h5>{{ $job->created_at->diffForHumans() }}</h5>
                                         </li>
                                     </ul>
                                 </div>

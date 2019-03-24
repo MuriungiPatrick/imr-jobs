@@ -36,4 +36,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // USER CLASS
+    public function jobs()
+    {
+        return $this->belongsTo(Job::class, 'author_id');
+    }
+
+
+    //DISPLAY SLUG
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+
 }

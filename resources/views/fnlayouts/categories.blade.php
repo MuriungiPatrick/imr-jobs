@@ -6,12 +6,13 @@
         </header>
 
         <div class="category-grid">
+
             <a href="category-details.html">
                 <h4>Backend</h4>
             </a>
 
             <a href="category-details.html">
-                <h4>Hello Richard Hoyle</h4
+                <h4>Hello Richard Hoyle</h4>
             </a>
 
             <a href="category-details.html">

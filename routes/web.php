@@ -22,7 +22,7 @@ Route::get('/', 'JobController@index');
 
 // DEFINE SHOW Page
 //  Route::get('/jobs/show', function () { return view('jobs.SHOW'); });
-Route::get('/jobs/show', 'JobController@show');
+Route::get('/jobs/{job}', 'JobController@show');
 
 // DEFINE CATEGORY Page
 //  Route::get('/category/index', function () { return view('category.index'); });
@@ -30,7 +30,7 @@ Route::get('/category/{category}', 'JobController@category');
 
 // DEFINE Author Page
 //  Route::get('/author/index', function () { return view('author.index'); });
-Route::get('/author/index', 'JobController@author');
+Route::get('/author/{author}', 'JobController@author');
 
 // DEFINE About Page
 //  Route::get('/about/index', function () { return view('about.index'); });

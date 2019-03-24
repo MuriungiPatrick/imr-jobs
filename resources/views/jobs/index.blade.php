@@ -41,10 +41,10 @@
                 <div class="col-xs-12">
                     <div class="jobs-block">
                         <header>
-                            <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
+                            <a href="{{ route('jobs.show', $job->slug) }}"><img class="resume-avatar" src="{{asset('assets/img/avatar-1.jpg')}}" alt=""></a>
                             <div class="hgroup">
                                 <h4>
-                                    <a href="jobs-details.html">{{ $job->job_title }}</a>
+                                    <a href="{{ route('jobs.show', $job->slug) }}">{{ $job->job_title }}</a>
                                 </h4>
                                 <div class="spacer-front"></div>
                             </div>
@@ -57,7 +57,7 @@
                         <footer>
                             <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i>
                                 </strong>{{ $job->created_at->diffForHumans() }} &nbsp; By:&nbsp;
-                                <a href="author-jobs-details.html">James Mwirigi</a></div>
+                                <a href="{{ url('author', $job->author->slug) }}">{{ $job->author->name }}</a></div>
 
                             <div class="action-btn">
                                 <a class="btn btn-xs btn-info" href="{{ url('category', $job->category->slug) }}">{{ $job->category->title }}</a>

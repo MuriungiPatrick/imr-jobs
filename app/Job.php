@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Category;
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Job extends Model
@@ -11,6 +12,18 @@ class Job extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
+    }
+
+    // USER CLASS
+    public function author()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    //DISPLAY SLUG
+    public function getRouteKeyName()
+    {
+        return 'slug';
     }
 
 

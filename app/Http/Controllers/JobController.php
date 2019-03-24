@@ -25,9 +25,9 @@ class JobController extends Controller
      *   AND
      * returns the view for this area
      */
-    public function show()
+    public function show(Job $job)
     {
-        return view('jobs.show');
+        return view('jobs.show', compact('job'));
     }
 
     /**
@@ -45,6 +45,7 @@ class JobController extends Controller
             ->where('category_id', $category->id)
             ->paginate(5);
         return view('category.index', compact('jobs', 'categories', 'categoryName'));
+
     }
 
     /**
@@ -52,9 +53,17 @@ class JobController extends Controller
      *   AND
      * returns the view for this area
      */
-    public function author()
+    public function author(User $author)
     {
-        return view('author.index');
+        $authorName = $author->naem;
+        $categories = category::with('jobs')->orderby('title','asc')->get();
+        $jobs = job::with('category')
+            ->LatestFirst()
+            ->published()
+            ->where('author_id', $author->id)
+            ->paginate(5);
+        return view('author.index', compact('jobs', 'categories', 'authorName'));
+
     }
 
 
