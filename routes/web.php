@@ -26,7 +26,8 @@ Route::get('/jobs/{job}', 'JobController@show');
 
 // DEFINE CATEGORY Page
 //  Route::get('/category/index', function () { return view('category.index'); });
-Route::get('/category/{category}', 'JobController@category');
+Route::get('/category/{category}', 'JobController@category')->name('category');
+
 
 // DEFINE Author Page
 //  Route::get('/author/index', function () { return view('author.index'); });
