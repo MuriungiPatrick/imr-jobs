@@ -15,7 +15,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(User::class, function (Faker $faker) {
+$factory->define(App\User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'aboutme'=>$faker->paragraphs(rand(2,3),true),
